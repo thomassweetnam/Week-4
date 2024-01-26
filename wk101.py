@@ -194,14 +194,3 @@ def chi_square_test(data_file, local_area):
     chi2_wider, p_value_wider, dof_wider, _ = chi2_contingency(np.array([observed_wider, expected_wider]))
 
     return chi2_wider, p_value_wider, dof_wider
-
-a = non_white_pct_bxplt("FormattedData.csv")
-print("Boxplot Values are")
-print(a)
-
-print(ethnic_pct_chart("FormattedData.csv", "Dacorum"))
-
-print(ethnic_diff_chart("FormattedData.csv", "Dacorum"))
-
-print("Chi-Square Statistic, p-value, Degrees of Freedom respectively")
-print(chi_square_test("FormattedData.csv", "Dacorum"))
