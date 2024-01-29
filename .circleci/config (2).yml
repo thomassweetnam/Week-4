@@ -9,10 +9,10 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: pip install -r requirements.txt
+          command: pip install -r requirements.txtd
       - run:
           name: Run tests
-          command: pytest
+          command: python TestSuite.py
 
 workflows:
   version: 2
